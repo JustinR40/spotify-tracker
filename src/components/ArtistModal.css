@@ -1,0 +1,119 @@
+#artist-modal {
+    color: white;
+}
+#artist-modal h3 {
+    position: sticky;
+    top: 0;
+    background: #211f26;
+    z-index: 10;
+    padding: 1em 0;
+    margin: 0;
+}
+#modal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+#modal-header h1 {
+    margin: 0;
+}
+#modal-header .image {
+    margin-right: 1.5em;
+    width: 100px;
+}
+
+#followers {
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: 0.2em;
+}
+#modal-content {
+    background-color: #191414;
+    padding: 2em;
+    padding-top: 1em;
+}
+
+#modal-actions {
+    text-align: center;
+    background-color: #191414;
+}
+#flex-container {
+    display: flex;
+}
+#top-tracks {
+    background-color: #211f26;
+    padding: 1em;
+    padding-top: 0;
+    border-radius: 0.3125em;
+    overflow-y: scroll;
+    width: 350px;
+    max-height: 60vh;
+    margin-right: 1em;
+}
+#top-tracks dl {
+    margin: 0;
+}
+#top-tracks dt {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.3em;
+    padding: 0.3em 0;
+    border-bottom: 0.135em solid #1b191f;
+}
+#top-tracks dt:last-child {
+    border-bottom: none;
+}
+#top-tracks dt:hover {
+    background-color: #323137;
+    cursor: pointer;
+}
+#top-tracks dt:hover button {
+    visibility: visible;
+}
+#top-tracks dt:hover span {
+    margin-left: 0.9em;
+}
+#top-tracks span {
+    margin-right: 1em;
+    margin-left: 0.5em;
+    transition: margin-left 0.1s linear;
+}
+
+#top-tracks button {
+    margin-left: auto;
+    visibility: hidden;
+}
+#discog {
+    flex: 1;
+    background-color: #211f26;
+    padding: 1em;
+    padding-top: 0;
+    border-radius: 0.3125em;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+
+#discog span {
+    margin-left: 0.1em;
+}
+
+#discog .image {
+    overflow: hidden;
+}
+#discog img {
+    transition: transform 0.1s linear;
+}
+#discog img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#discog p {
+    margin: 0.5em 0;
+}
+#discog p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#discog small {
+    color: #8b8998;
+}

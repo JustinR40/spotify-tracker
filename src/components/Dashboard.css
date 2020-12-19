@@ -1,0 +1,37 @@
+body {
+    background-color: #191414;
+}
+#currently-listening {
+    position: fixed;
+    top: 1em;
+}
+#dashboard {
+    padding: 50px;
+    display: flex;
+    font-family: Montserrat !important;
+    max-height: 100vh;
+}
+
+#artists-container {
+    background-color: #211f26;
+    border-radius: 0.3125em;
+    padding: 20px;
+    margin-right: 1em;
+    overflow: scroll;
+}
+
+.artist-name {
+    color: white;
+}
+.artist-name:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+#tracks-container {
+    padding: 20px;
+    background-color: #211f26;
+    border-radius: 0.3125em;
+    flex: 1;
+    overflow: scroll;
+}
