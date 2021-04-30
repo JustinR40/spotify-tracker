@@ -22,14 +22,25 @@ spec:
       - name: gke-test
         image: gcr.io/PROJECT_ID/IMAGE:TAG
         ports:
-        - containerPort: 5000
+        - containerPort: 80
         resources:
           requests:
             cpu: 100m
           limits:
             cpu: 100m
-        livenessProbe: 
-          tcpSocket:
-            port: 5000
-          initialDelaySeconds: 120
+        livenessProbe:
+             httpGet:
+                 path: /index.html
+                 port: 80
+             initialDelaySeconds: 15
+             timeoutSeconds: 2
+             periodSeconds: 5
+             failureThreshold: 1
+         readinessProbe:
+             httpGet:
+                 path: /index.html
+                 port: 80
+             initialDelaySeconds: 15
+             periodSeconds: 5
+             failureThreshold: 1
           
