@@ -28,3 +28,6 @@ spec:
             cpu: 100m
           limits:
             cpu: 100m
+        livenessProbe: 
+          initialDelaySeconds: 120
+          
