@@ -29,5 +29,7 @@ spec:
           limits:
             cpu: 100m
         livenessProbe: 
+          tcpSocket:
+            port: 5000
           initialDelaySeconds: 120
           
