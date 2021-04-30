@@ -1,4 +1,4 @@
-FROM node:10.4.3
+FROM node:lts
 WORKDIR /usr/src/app
 COPY package*.json ./
 ADD package.json /usr/src/app/package.json
