@@ -132,7 +132,7 @@ const Dashboard = () => {
                                                     })
                                                 }
                                             >
-                                                <Image src={item.images[0].url} avatar />
+                                                <Image src={item.images[0]?.url} avatar />
                                                 &nbsp;
                                                 <span>{item.name}</span>
                                             </Table.Cell>
